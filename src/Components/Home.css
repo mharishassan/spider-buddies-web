@@ -1,0 +1,156 @@
+/* Home.css */
+
+/* Hero section */
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+/* Card styles */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Set flex direction to column */
+}
+
+.card {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1; /* Distribute remaining space equally among cards */
+  margin-bottom: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Our Mission section */
+.ourmission-section {
+  background-color: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.ourmission-section h2 {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.ourmission-section p {
+  color: white;
+  line-height: 1.6;
+}
+
+.ourmission-section .btn {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.ourmission-section .btn:hover {
+  background-color: #BE1E2DFF;
+}
+
+/* School name section */
+.schoolname-section {
+  background-color: #BE1E2DFF;
+  padding: 50px 20px;
+}
+
+.schoolname-section h2 {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.columnschool {
+  flex: 1;
+  color: white;
+  
+}
+
+.columnschool ul {
+  padding-left: 10;
+}
+
+.columnschool ul li {
+  margin-bottom: 10px;
+  list-style-position: inside; /* Place the bullet inside the list item */
+}
+
+/* Home.css */
+
+/* Recognized by section */
+.recognized-by {
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.recognized-by h2 {
+  color: #333;
+}
+
+.images-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+}
+
+.images-container img {
+  margin: 0 10px;
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add space between images */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    margin: 10px 0;
+  }
+
+  .images-container img {
+    flex: 0 0 calc(50% - 20px); /* Two images per row with margin */
+  }
+
+}
+
+@media (max-width: 425px) {
+  .columnschool {
+    flex: none; 
+    width: 100%;
+  }
+
+  .images-container img {
+    flex: 0 0 calc(100% - 20px); /* One image per row with margin */
+  }
+}
