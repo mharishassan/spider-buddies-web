@@ -1,0 +1,30 @@
+/* Footer.css */
+
+.footer {
+  background-color: #BE1E2DFF;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.logo {
+  margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.containerfooter p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-bottom: 5px; /* Add space between logo and text on smaller screens */
+  }
+}
